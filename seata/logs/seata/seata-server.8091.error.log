@@ -1,0 +1,28 @@
+2021-10-26 18:28:27.519 ERROR --- [                          main] io.seata.server.Server                   : nettyServer init error:java.net.BindException: Address already in use: bind
+==>
+java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at io.seata.core.rpc.netty.NettyServerBootstrap.start(NettyServerBootstrap.java:157) ~[seata-core-1.4.1.jar:na]
+	at io.seata.core.rpc.netty.AbstractNettyRemotingServer.init(AbstractNettyRemotingServer.java:55) ~[seata-core-1.4.1.jar:na]
+	at io.seata.core.rpc.netty.NettyRemotingServer.init(NettyRemotingServer.java:52) ~[seata-core-1.4.1.jar:na]
+	at io.seata.server.Server.main(Server.java:102) ~[seata-server-1.4.1.jar:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_221]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_221]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_221]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_221]
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:130) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:558) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1358) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:501) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:486) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:1019) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:254) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:366) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-all-4.1.30.Final.jar:4.1.30.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_221]
+<==
+

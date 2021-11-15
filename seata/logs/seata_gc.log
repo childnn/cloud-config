@@ -1,0 +1,7 @@
+Java HotSpot(TM) 64-Bit Server VM (25.221-b11) for windows-amd64 JRE (1.8.0_221-b11), built on Jul  4 2019 04:39:29 by "java_re" with MS VC++ 10.0 (VS2010)
+Memory: 4k page, physical 33458404k(26038272k free), swap 40798436k(30641440k free)
+CommandLine flags: -XX:CMSInitiatingOccupancyFraction=75 -XX:+CMSParallelRemarkEnabled -XX:CompressedClassSpaceSize=260046848 -XX:+DisableExplicitGC -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=D:\nacos-seata\seata-server-1.4.1-work\seata\bin\\../logs/java_heapdump.hprof -XX:InitialHeapSize=2147483648 -XX:MaxDirectMemorySize=1073741824 -XX:MaxHeapSize=2147483648 -XX:MaxMetaspaceSize=268435456 -XX:MaxNewSize=1073741824 -XX:MetaspaceSize=134217728 -XX:NewSize=1073741824 -XX:-OmitStackTraceInFastThrow -XX:+PrintGC -XX:+PrintGCTimeStamps -XX:SurvivorRatio=10 -XX:ThreadStackSize=512 -XX:-UseAdaptiveSizePolicy -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:-UseLargePagesIndividualAllocation -XX:+UseParallelGC 
+806.918: [GC (Allocation Failure)  874496K->17080K(2010112K), 0.0141434 secs]
+9916.303: [GC (Allocation Failure)  891576K->10080K(2010112K), 0.0171592 secs]
+24428.364: [GC (Allocation Failure)  884576K->12016K(2010112K), 0.2466881 secs]
+46375.901: [GC (Allocation Failure)  886512K->13520K(2010112K), 0.2661587 secs]
